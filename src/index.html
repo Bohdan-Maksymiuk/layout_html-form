@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
       onsubmit="onSubmit()"
     >
-      <fieldset>
+      <fieldset class="fieldset1">
         <legend>Personal information</legend>
 
         <div class="form__field">
@@ -45,19 +43,20 @@
 
         <div class="form__field">
 
-          <label for="age">How old are you?</label>
+          <label for="age">How old are You?</label>
           <input
             type="number"
             name="age"
             id="age"
             value="12"
-            maxlength="2"
+            max="100"
+            min="1"
           >
         </div>
 
         <div class="form__field">
 
-          <label for="dateOfBirth">Full date of birth?</label>
+          <label for="dateOfBirth">Full date of birth:</label>
           <input
           type="date"
           name="dateOfBirth"
@@ -70,7 +69,6 @@
           <input
           type="checkbox"
           name="terms"
-          checked
           id="terms"
         >
 
@@ -78,7 +76,7 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset2">
         <legend>Registration</legend>
 
         <div class="form__field">
@@ -107,7 +105,7 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset3">
         <legend>An interesting fact about you!</legend>
 
         <div class="form__field">
@@ -173,7 +171,7 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset4">
         <legend>Additional info:
 
           <div class="form__field">
